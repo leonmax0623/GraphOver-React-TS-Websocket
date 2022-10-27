@@ -1,0 +1,77 @@
+.modal {
+  width: 100%;
+  max-width: 453px;
+  padding-top: 22px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  max-height: 200px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(196, 196, 196, 0.3);
+    border-radius: 16px 16px 16px 0px;
+    right: -5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #5629e1;
+    border-radius: 55px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+  }
+}
+.textInput {
+  & + .textArea {
+    margin-top: 8px;
+  }
+}
+
+.textArea {
+  height: 212px;
+}
+
+.approval {
+  margin-top: 16px;
+}
+
+.controls {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  .btn {
+    min-width: 130px;
+  }
+}
+
+.info {
+  margin-top: 16px;
+  list-style-type: none;
+  padding: 0;
+  li {
+    font-size: 12px;
+    line-height: 143%;
+    color: #1a1a1a;
+    .title {
+      font-size: 14px;
+      line-height: 143%;
+      display: block;
+      color: rgba(26, 26, 26, 0.5);
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    & + li {
+      margin-top: 20px;
+    }
+  }
+}

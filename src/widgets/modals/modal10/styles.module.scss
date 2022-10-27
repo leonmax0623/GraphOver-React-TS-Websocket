@@ -1,0 +1,47 @@
+.modal {
+  width: 100%;
+  max-width: 453px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  canvas {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  & > h3 {
+    margin-top: -40px;
+  }
+  & > p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 600px) {
+    canvas {
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  & + * {
+    margin-top: 24px;
+  }
+}
+
+.picture {
+  position: relative;
+  width: 352px;
+  height: 152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin: 32px auto 0;
+  width: 80%;
+}

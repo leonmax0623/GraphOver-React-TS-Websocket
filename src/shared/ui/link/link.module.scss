@@ -1,0 +1,17 @@
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5629E1;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

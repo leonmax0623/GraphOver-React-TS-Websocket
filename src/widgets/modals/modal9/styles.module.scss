@@ -1,0 +1,43 @@
+.modal {
+    width: 100%;
+    max-width: 380px;
+    padding-top: 40px;
+}
+
+.title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    & + * {
+        margin-top: 24px;
+    }
+}
+
+.sort {
+    & + .textInput {
+        margin-top: 8px;
+    }
+}
+.textInput {
+    height: 40px;
+    & + .textArea {
+        margin-top: 8px;
+    }
+}
+
+.textArea {
+    height: 128px;
+    & + .textArea {
+        height: 212px;
+        margin-top: 8px;
+    }
+}
+
+.approval {
+    margin-top: 16px;
+}
+
+.btn {
+    margin: 32px auto 0;
+    width: 100%;
+}

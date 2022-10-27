@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('sf-pro-text-regular.woff2') format('woff2'),
+  url('sf-pro-text-regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('sf-pro-text-medium.woff2') format('woff2'),
+  url('sf-pro-text-medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+}

@@ -1,0 +1,51 @@
+.plotList {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .plotItem {
+        position: relative;
+        padding-left: 50px;
+    }
+    .title {
+        margin: 0;
+    }
+    .caption {
+        color: rgba(26, 26, 26, 0.5);
+        margin-top: 6px;
+        display: block;
+    }
+    .pic {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .plotList {
+        grid-template-columns: repeat(2, 1fr);
+
+        .plotItem {
+            margin-bottom: 24px;
+        }
+        .title {
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .plotList {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 16px;
+        .plotItem {
+            margin-bottom: 16px;
+        }
+        .title {
+        }
+        .caption {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.card {
+  background-color: #fff;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 15px 28px 23px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.top {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.bottom {
+  color: #000;
+}
+
+.title {
+  margin: 0;
+  margin-right: 29px;
+}
+
+.searchField {
+  position: absolute;
+  right: 130px;
+  bottom: -61px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.list {
+  margin-bottom: 48px;
+}
+
+.plotPropose {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    margin-right: 14px;
+  }
+
+  .list {
+    margin-bottom: 46px;
+  }
+
+  .card {
+    padding-bottom: 0;
+    .plotPropose {
+      top: 17px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .card {
+    margin: 0 auto;
+    padding: 16px 22px 0;
+    .plotPropose {
+      top: 17px;
+    }
+  }
+
+  .top {
+  }
+
+  .searchField {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 16px;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .plotPropose {
+    display: none;
+  }
+}

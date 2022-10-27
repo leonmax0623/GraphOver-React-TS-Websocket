@@ -1,0 +1,58 @@
+.modal {
+    width: 100%;
+    max-width: 453px;
+    padding-top: 22px;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+}
+
+.textInput {
+    & + .textArea {
+        margin-top: 8px;
+    }
+}
+
+.textArea {
+    height: 212px;
+}
+
+.approval {
+    margin-top: 16px;
+}
+
+.controls {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .btn {
+        min-width: 130px;
+    }
+}
+
+.info {
+    margin-top: 16px;
+    list-style-type: none;
+    padding: 0;
+    li {
+        font-size: 12px;
+        line-height: 143%;
+        color: #1a1a1a;
+        .title {
+            font-size: 14px;
+            line-height: 143%;
+            display: block;
+            color: rgba(26, 26, 26, 0.5);
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        & + li {
+            margin-top: 20px;
+        }
+    }
+}

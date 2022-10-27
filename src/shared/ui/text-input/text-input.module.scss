@@ -1,0 +1,99 @@
+.container {
+}
+
+.label {
+  display: block;
+  margin-bottom: 14px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #151522;
+}
+
+.fieldContainer {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  input {
+    padding: 16px 15px 16px 15px;
+  }
+}
+
+.field {
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+
+  outline: none;
+  background-color: transparent;
+  border: none;
+
+  &::placeholder {
+    color: rgba(26, 26, 26, 0.5);
+  }
+  &:read-only {
+    opacity: 0.7;
+  }
+}
+
+.message {
+  margin: 0;
+  margin-top: 7px;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.container.error {
+  .fieldContainer {
+    border-color: #ff4b67;
+  }
+
+  .field,
+  .field::placeholder {
+    color: #ff4b67;
+  }
+
+  .message {
+    color: #ff4b67;
+  }
+}
+
+.container.success {
+  .fieldContainer {
+    border-color: #00c48c;
+  }
+
+  .field,
+  .field::placeholder {
+    color: #00c48c;
+  }
+
+  .message {
+    color: #00c48c;
+  }
+}
+
+.container.filled {
+  filter: drop-shadow(0px 8px 8px rgba(0, 196, 140, 0.08));
+}
+
+@media (max-width: 450px) {
+  .label {
+    margin-bottom: 10px;
+
+    font-size: 12px;
+  }
+
+  .fieldContainer {
+    height: 42px;
+    padding: 10px 13px;
+  }
+}

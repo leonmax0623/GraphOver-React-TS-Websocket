@@ -1,0 +1,39 @@
+.modal {
+    width: 100%;
+    max-width: 453px;
+    padding-top: 50px;
+}
+
+.title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    & + * {
+        margin-top: 24px;
+    }
+}
+
+.DragAndDrop {
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px dashed rgba(26, 26, 26, 0.5);
+    max-width: 356px;
+    margin-left: auto;
+    margin-right: auto;
+    .caption {
+        color: rgba(26, 26, 26, 0.5);
+        margin: 0;
+    }
+    .format {
+        margin: 0;
+    }
+}
+
+.btn {
+    margin: 32px auto 0;
+    width: 80%;
+}

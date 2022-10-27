@@ -1,0 +1,76 @@
+.container {
+}
+
+.fieldContainer {
+  width: 100%;
+  height: calc(100% - 13px);
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+
+.field {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: calc(100% - 13px);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 143%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 12px 16px;
+  &::placeholder {
+    color: rgba(26, 26, 26, 0.5);
+  }
+}
+
+.message {
+  margin: 0;
+  margin-top: 7px;
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.container.error {
+  .fieldContainer {
+    border-color: #ff4b67;
+  }
+
+  .field,
+  .field::placeholder {
+    color: #ff4b67;
+  }
+
+  .message {
+    color: #ff4b67;
+  }
+}
+
+.container.success {
+  .fieldContainer {
+    border-color: #00c48c;
+  }
+
+  .field,
+  .field::placeholder {
+    color: #00c48c;
+  }
+
+  .message {
+    color: #00c48c;
+  }
+}
+
+.container.filled {
+  filter: drop-shadow(0px 8px 8px rgba(0, 196, 140, 0.08));
+}
+
+@media (max-width: 450px) {
+  .fieldContainer {
+    height: 42px;
+    padding: 10px 13px;
+  }
+}

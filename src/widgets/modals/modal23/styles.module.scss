@@ -1,0 +1,73 @@
+.modal {
+    width: 100%;
+    max-width: 380px;
+    padding-top: 40px;
+}
+
+.title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    & + * {
+        margin-top: 24px;
+    }
+}
+
+.btn {
+    margin: 32px auto 0;
+    width: 100%;
+}
+
+.authorCheckList {
+    height: 390px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    scrollbar-color: #fff #253861;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: rgba(196, 196, 196, 0.3);
+        border-radius: 16px 16px 16px 0px;
+        right: -5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #5629e1;
+        border-radius: 55px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #fff;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        & + .item {
+            margin-top: 16px;
+        }
+    }
+    .authorLabel {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .picture {
+        width: 40px;
+        height: 40px;
+    }
+    .txt {
+        .tit {
+            font-size: 14px;
+            color: rgba(26, 26, 26, 0.5);
+            display: block;
+        }
+        .name {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            color: #1a1a1a;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.feedBack {
+  margin-top: 32px;
+  background: #fff;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  position: relative;
+  padding: 25px 20px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    .title {
+      margin: 0;
+    }
+    .count {
+      font-weight: 500;
+      font-size: 16px;
+
+      color: #1a1a1a;
+      .num {
+        color: rgba(26, 26, 26, 0.5);
+        margin-left: 6px;
+      }
+    }
+  }
+  .body {
+    margin-top: 24px;
+  }
+}
+
+.btnsWrapper {
+  width: 100%;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  button.btn {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedBack {
+    .top {
+      .count {
+        font-size: 12px;
+      }
+    }
+  }
+  .btnsWrapper {
+    padding: 0 10px;
+  }
+}

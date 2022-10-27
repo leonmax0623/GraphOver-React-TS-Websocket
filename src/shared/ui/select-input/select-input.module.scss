@@ -1,0 +1,28 @@
+.container {
+}
+
+.label {
+}
+
+.message {
+  margin: 0;
+  margin-top: 7px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.container.error {
+  .fieldContainer {
+    border-color: #ff4b67;
+  }
+
+  .field,
+  .field::placeholder {
+    color: #ff4b67;
+  }
+
+  .message {
+    color: #ff4b67;
+  }
+}

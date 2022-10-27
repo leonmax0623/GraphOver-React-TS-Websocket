@@ -1,0 +1,86 @@
+.modal {
+    width: 100%;
+    max-width: 354px;
+    padding-top: 48px;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textInput {
+    & + .textArea {
+        margin-top: 8px;
+    }
+}
+
+.textArea {
+    height: 212px;
+}
+
+.approval {
+    margin-top: 16px;
+}
+
+.controls {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .btn {
+        min-width: 130px;
+    }
+}
+
+.info {
+    margin-top: 16px;
+    list-style-type: none;
+    padding: 0;
+    li {
+        font-size: 12px;
+        line-height: 143%;
+        color: #1a1a1a;
+        .title {
+            font-size: 14px;
+            line-height: 143%;
+            display: block;
+            color: rgba(26, 26, 26, 0.5);
+            text-align: left;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        & + li {
+            margin-top: 20px;
+        }
+    }
+}
+
+.foto {
+    width: 147px;
+    height: 113px;
+    cursor: pointer;
+    background: #ededed;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    .iconWrap {
+        width: 39px;
+        height: 39px;
+        background: #ffffff;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        border-radius: 50%;
+    }
+}

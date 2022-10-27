@@ -1,0 +1,175 @@
+.card {
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-top: 23px;
+  padding-bottom: 39px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.title {
+  margin: 0;
+  margin-right: 29px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.searchField {
+  position: relative;
+  top: 3px;
+}
+
+.left {
+  max-width: 80%;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.list {
+  margin-bottom: 48px;
+}
+
+.listHistory {
+}
+
+.historyItem {
+  background: #ffffff;
+  border: 1px solid #f7f7f7;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 24px;
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    .date {
+      font-size: 12px;
+      line-height: 143%;
+      color: rgba(26, 26, 26, 0.5);
+    }
+    .left {
+    }
+    .right {
+      margin-left: auto;
+    }
+  }
+  .body {
+    font-size: 12px;
+    color: rgba(26, 26, 26, 0.5);
+    p {
+      margin: 8px 0 0;
+    }
+  }
+  & + .historyItem {
+    margin-top: 24px;
+  }
+}
+
+.bottom {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  p {
+    font-size: 12px;
+    color: rgba(26, 26, 26, 0.5);
+}
+}
+
+
+
+.authors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 250px;
+  .tit {
+      font-size: 12px;
+      color: #1a1a1a;
+  }
+  .num {
+      font-size: 12px;
+      color: rgba(26, 26, 26, 0.5);
+  }
+  .peoples {
+      margin-left: 10px;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      cursor: pointer;
+      .circle {
+          display: inline-block;
+          margin: 0 -7px;
+          width: 34px;
+          height: 34px;
+          border: 3px solid transparent;
+          border-radius: 50%;
+          &.last {
+              border-color: #00c48c;
+          }
+      }
+  }
+}
+
+@media (max-width: 1024px) {
+  .top {
+    margin-bottom: 26px;
+  }
+
+  .title {
+    margin-right: 14px;
+  }
+
+  .list {
+    margin-bottom: 46px;
+  }
+
+  .card {
+    padding-left: 24px;
+    padding-right: 47px;
+  }
+}
+
+@media (max-width: 764px) {
+  .card {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .plotPropose {
+    display: none;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 100%;
+    padding: 5px 0 0;
+  }
+  .left {
+    max-width: 100%;
+  }
+}

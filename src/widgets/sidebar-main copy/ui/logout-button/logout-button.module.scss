@@ -1,0 +1,21 @@
+.button {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+  transition: all .1s ease;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.icon {
+  fill: #ffffff;
+}

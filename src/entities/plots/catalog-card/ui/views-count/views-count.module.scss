@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(26, 26, 26, 0.5);
+  margin-left: auto;
+}
+
+.icon {
+  margin-right: 6px;
+  stroke: #171d25;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.label {
+  margin-right: 7px;
+
+  color: #1A1A1A;
+}
+
+.value {
+  color: rgba(26, 26, 26, 0.5);
+}

@@ -1,0 +1,63 @@
+.modal {
+    width: 100%;
+    max-width: 375px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    & + * {
+        margin-top: 24px;
+    }
+}
+
+.caption {
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.controls {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    .btn {
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 0.75;
+        }
+        &.for {
+            .num {
+                color: #00c48c;
+            }
+            .pic {
+                background-color: #00c48c;
+            }
+        }
+        &.again {
+            color: #ff4b67;
+            .pic {
+                background-color: #ff4b67;
+            }
+        }
+        .num {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .pic {
+            width: 30px;
+            height: 30px;
+            margin-left: 13px;
+            border-radius: 50%;
+            object-fit: scale-down;
+        }
+    }
+}

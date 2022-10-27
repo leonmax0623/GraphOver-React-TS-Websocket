@@ -1,0 +1,126 @@
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 37px;
+  height: 37px;
+}
+
+.icon {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.label {
+  margin-left: 10px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  opacity: 1;
+  transition: all 0.075s ease;
+}
+
+.collapse {
+  .label {
+    opacity: 0;
+    margin-left: 0;
+  }
+}
+.link-unactive {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease;
+  opacity: 0.6;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    width: 0;
+    height: 33px;
+
+    background: #ffffff;
+    border-radius: 4px;
+
+    transform: translateY(-50%);
+
+    transition: all 0.1s ease;
+  }
+}
+.link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.1s ease;
+  opacity: 0.6;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    width: 0;
+    height: 33px;
+
+    background: #ffffff;
+    border-radius: 4px;
+
+    transform: translateY(-50%);
+
+    transition: all 0.1s ease;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &.current {
+    opacity: 1;
+
+    &:hover {
+      cursor: default;
+    }
+
+    &::before {
+      width: 4px;
+    }
+  }
+}

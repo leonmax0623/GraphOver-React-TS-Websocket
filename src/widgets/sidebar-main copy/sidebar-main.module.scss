@@ -1,0 +1,54 @@
+.container {
+}
+
+.content,
+.expander {
+  transition: all .2s ease;
+}
+
+.collapse {
+  .content,
+  .expander {
+    width: 75px;
+  }
+}
+
+.expanded {
+  .content,
+  .expander {
+    width: 256px;
+  }
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+
+  padding-top: 14px;
+  padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+
+  background: #171D25;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  padding-left: 17px;
+  padding-right: 18px;
+}
+
+.middle {
+  padding-left: 17px;
+}
+
+.bottom {
+  margin-top: auto;
+  padding-left: 17px;
+  padding-right: 18px;
+}

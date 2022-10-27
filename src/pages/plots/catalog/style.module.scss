@@ -1,0 +1,15 @@
+.card {
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-top: 23px;
+  padding-bottom: 39px;
+  margin-bottom: 20px;
+  // .carousel {
+  //   height: 240px;
+  // }
+}
+.cardSlider {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}

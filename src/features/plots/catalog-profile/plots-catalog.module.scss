@@ -1,0 +1,80 @@
+.card {
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-top: 23px;
+  padding-bottom: 39px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.title {
+  margin: 0;
+  margin-right: 29px;
+}
+
+.searchField {
+  position: relative;
+  top: 3px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.list {
+  margin-bottom: 48px;
+}
+
+.plotPropose {
+
+}
+
+@media (max-width: 1024px) {
+  .top {
+    margin-bottom: 26px;
+  }
+
+  .title {
+    margin-right: 14px;
+  }
+
+  .list {
+    margin-bottom: 46px;
+  }
+
+  .card {
+    padding-left: 24px;
+    padding-right: 47px;
+  }
+}
+
+@media (max-width: 764px) {
+  .card {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .plotPropose {
+    display: none;
+  }
+}

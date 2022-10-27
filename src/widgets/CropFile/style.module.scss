@@ -1,0 +1,136 @@
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modalClose {
+  position: absolute;
+  color: white;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.textBtn {
+  color: white;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 24px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.imgDropBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  margin-bottom: 0;
+  // padding: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #262030;
+  transition: all 0.15s;
+  align-items: center;
+  width: 201px;
+  min-width: 171px;
+  height: 36px;
+  font-size: 14px;
+  &:hover {
+    color: #5629e1;
+    // background-color: #e0e7ea;
+  }
+}
+.iconQWapper {
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 10px;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.cropBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  canvas {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  & > h3 {
+    margin-top: -40px;
+  }
+  & > p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 600px) {
+    canvas {
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+  }
+}
+.filename {
+  width: 50%;
+  font-size: 12px;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  color: black;
+}
+.profileBtn {
+  z-index: 10;
+  & > p {
+    width: 100%;
+    max-width: 380px;
+    font-size: 16px;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .textBtn {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .filename {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .btnsBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .imgDropBtn {
+    max-width: 150px;
+    margin: 5px;
+  }
+  .disable {
+    background-color: #d4d4d4;
+    cursor: unset;
+  }
+  @media screen and (max-width: 550px) {
+    .btnsBlock {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

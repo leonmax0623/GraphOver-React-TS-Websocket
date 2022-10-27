@@ -1,0 +1,111 @@
+.form {
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 43px;
+  color: #5629e1;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.toggle {
+  margin-top: 32px;
+}
+
+.switch {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #1a1a1a;
+}
+.form .tabs {
+  margin-bottom: 15px;
+}
+
+.approval {
+  margin-top: 32px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.forgot {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 17px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.link {
+  margin-left: 4px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .switch {
+    margin-bottom: 28px;
+  }
+
+  .item {
+    margin-bottom: 19px;
+  }
+
+  .toggle {
+    margin-top: 25px;
+  }
+
+  .button {
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .switch {
+    margin-bottom: 30px;
+  }
+
+  .switch .link {
+  }
+
+  .item {
+    margin-bottom: 13px;
+  }
+
+  .button {
+    margin-bottom: 22px;
+  }
+}

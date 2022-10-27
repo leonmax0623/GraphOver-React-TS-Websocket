@@ -1,0 +1,43 @@
+.modal {
+  width: 100%;
+  max-width: 375px;
+  padding-top: 32px;
+}
+
+.title {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  & + * {
+    margin-top: 24px;
+  }
+}
+
+.rate {
+  position: relative;
+  width: 204px;
+  height: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  // // background-image: url("../../../shared/assets/test-content/star.png");
+  // .rateValue {
+  //     background-image: url("../../../shared/assets/test-content/star-fild.png");
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     width: 0%;
+  //     height: 100%;
+  // }
+}
+
+.controls {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  .btn {
+    min-width: 137px;
+  }
+}

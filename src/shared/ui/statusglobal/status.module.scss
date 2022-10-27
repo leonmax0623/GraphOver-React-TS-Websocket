@@ -1,0 +1,33 @@
+.status {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 143%;
+  position: relative;
+  padding: 6px 16px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  margin-right: auto;
+  &.moderation {
+    background: #dadada;
+    color: rgba(26, 26, 26, 0.5);
+  }
+  &.waiting {
+    background: #ffd74b;
+    color: rgba(26, 26, 26, 0.5);
+  }
+  &.approved {
+    background: #00c48c;
+    color: #fff;
+  }
+  &.rejected {
+    background: #ff4b67;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .status {
+    margin-right: 0;
+  }
+}

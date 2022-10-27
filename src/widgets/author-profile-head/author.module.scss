@@ -1,0 +1,163 @@
+.userProfile {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 8px 4px 14px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  .picture {
+    width: 82px;
+    height: 82px;
+    position: relative;
+    img {
+      border-radius: 50%;
+    }
+    .edit {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: block;
+      background-color: #5629e1;
+      border: 3px solid #ffffff;
+      border-radius: 37px;
+      background-image: url('../../shared/assets/test-content/icedit-white.svg');
+      bottom: -7px;
+      right: -7px;
+      position: absolute;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+  .info {
+    padding-left: 30px;
+    .line {
+      & + .line {
+      }
+    }
+    .nikname {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 143%;
+      color: rgba(26, 26, 26, 0.5);
+      margin-right: 15px;
+    }
+    .status {
+      display: inline-block;
+      position: relative;
+      font-size: 14px;
+      color: #00c48c;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-color: #ffffff;
+      border: 1px solid #f7f7f7;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      padding: 6px 20px 6px 35px;
+      &.ok {
+        background-image: url('../../shared/assets/test-content/circle-check.svg');
+      }
+    }
+    .name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 143%;
+      color: #1a1a1a;
+    }
+    .edit {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 143%;
+      color: rgba(26, 26, 26, 0.5);
+      margin-left: 15px;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration-color: rgba(26, 26, 26, 0.5);
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    .icon {
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      background: #5629e1;
+      border: 1px solid #f7f7f7;
+      box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+    .btn {
+    }
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .userProfile {
+    padding: 10px;
+    .picture {
+      position: absolute;
+      top: 25px;
+      left: 17px;
+      width: 35px;
+      height: 35px;
+      .edit {
+        background-size: 50%;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .info {
+      width: 100%;
+      padding-left: 60px;
+      .line {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .nikname {
+        font-size: 14px;
+      }
+      .status {
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        background-position: 6px center;
+        padding: 3px 15px 1px 30px;
+      }
+      .name {
+        margin-top: 6px;
+        font-size: 12px;
+        display: block;
+      }
+      .edit {
+        display: block;
+        margin: 0;
+      }
+    }
+    .btns {
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 15px;
+      padding: 0 8px;
+    }
+  }
+}

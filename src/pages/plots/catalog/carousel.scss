@@ -1,0 +1,10 @@
+.my-carousel {
+  max-width: 1920px;
+  margin: auto;
+  .carousel-slide {
+    max-height: 240px;
+    img {
+      object-fit: contain;
+    }
+  }
+}

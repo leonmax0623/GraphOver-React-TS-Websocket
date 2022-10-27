@@ -1,0 +1,99 @@
+.plotListWrapper {
+    background-color: #fff;
+    box-shadow: 8px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 15px 28px 23px;
+    position: relative;
+    margin-bottom: 32px;
+    .plotPropose {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+}
+
+.card {
+    padding-left: 24px;
+    padding-right: 32px;
+    padding-top: 23px;
+    padding-bottom: 39px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 19px;
+}
+
+.title {
+    margin: 0;
+    margin-right: 29px;
+}
+
+.searchField {
+    position: relative;
+    top: 3px;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        margin-bottom: 26px;
+    }
+
+    .title {
+        margin-right: 14px;
+    }
+
+    .list {
+        margin-bottom: 46px;
+    }
+
+    .card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .plotListWrapper {
+        padding-bottom: 0;
+        .plotPropose {
+            top: 17px;
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .card {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .top {
+        flex-wrap: wrap;
+    }
+
+    .plotListWrapper {
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 16px 14px 0;
+        .plotPropose {
+            top: 17px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .plotPropose {
+        display: none;
+    }
+}
